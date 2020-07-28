@@ -32,7 +32,7 @@ export const itemDetails = [
     cardTaskTitle: "9:00 AM - 9:15 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
-    metricCompletion: "50%",
+    metricCompletion: "80%",
   },
   {
     cardId: "2003",
@@ -53,7 +53,7 @@ export const itemDetails = [
   {
     cardId: "2004",
     cardTitle: "AD Change Request - Sofie",
-    cardTaskTitle: "Delay by 1 day",
+    cardTaskTitle: "Approved",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
     metricCompletion: "Approved",

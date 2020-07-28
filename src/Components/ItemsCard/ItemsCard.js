@@ -32,18 +32,22 @@ const useStyles = makeStyles({
     whiteSpace: "nowrap",
     fontFamily: "monospace",
     margin: "0px 20px 0px 15px",
+    color: "rgba(0, 0, 0, 0.7)",
   },
   circularProgressStyle: {
     position: "relative",
     top: 7,
+    color: "#041f41",
+    height: 35,
+    width: 35,
   },
   metricCompletionStyle: {
     position: "absolute",
-    right: 18,
-    fontSize: 11,
+    right: 19,
+    fontSize: 10,
     fontWeight: 700,
-    top: 18,
-    color: "#0747a6",
+    top: 20,
+    color: "#041f41",
   },
 });
 
@@ -51,7 +55,6 @@ const ItemsCard = (props) => {
   const classes = useStyles();
   const { item } = props;
   const {
-    cardId,
     cardTitle,
     cardTaskTitle,
     cardColor,
@@ -67,17 +70,17 @@ const ItemsCard = (props) => {
   };
 
   const mailUnreadIconStyle = {
-    color: "#0747a6",
+    color: "#041f41",
     position: "relative",
     left: 8,
     top: 14,
     height: 30,
-    width: 30
-
+    width: 30,
   };
 
   const mailReadIconStyle = {
-    color: "rgb(3, 167, 111)",
+    //color: "rgb(3, 167, 111)",
+    color: "#041f41",
     position: "relative",
     left: 8,
     top: 14,
@@ -86,21 +89,21 @@ const ItemsCard = (props) => {
   };
 
   const approvedCircleIconStyle = {
-    color: "rgb(3, 167, 111)",
+    color: "#041f41",
     position: "relative",
     left: 8,
     top: 14,
     height: 30,
-    width: 30
+    width: 30,
   };
 
   const nonApprovedCircleIconStyle = {
-    color: "#0747a6",
+    color: "rgba(4, 31, 65, 0.3)",
     position: "relative",
     left: 8,
     top: 14,
     height: 30,
-    width: 30
+    width: 30,
   };
 
   const findIconForCard = (cardCategory) => {
@@ -172,7 +175,16 @@ const ItemsCard = (props) => {
       </div>
       <div>
         <Typography className={classes.cardTitleStyle}>{cardTitle}</Typography>
-        <Typography className={classes.cardTaskTitleStyle}>
+        <Typography
+          className={classes.cardTaskTitleStyle}
+          style={
+            cardTaskTitle.includes("High") || cardTaskTitle.includes("Delay")
+              ? { color: "red" }
+              : cardTaskTitle.includes("Approved")
+              ? { color: "green" }
+              : null
+          }
+        >
           {cardTaskTitle}
         </Typography>
       </div>
