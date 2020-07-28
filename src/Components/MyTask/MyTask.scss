@@ -1,0 +1,55 @@
+.myTaskContainerStyle {
+  height: 100%;
+  width: 100%;
+
+  .topContainerStyle {
+    height: 35%;
+    width: 100%;
+    background-color: #041f41;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    .topIconContainerStyle {
+      padding: 25px 20px 15px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .categoryContainerStyle {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 20px 0px 20px;
+    }
+  }
+
+  .notificationCountStyle {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 35px;
+    margin-top: 10px;
+
+    .todayCountContainerStyle {
+      height: 30px;
+      width: 30px;
+      background-color: #fbe4c3;
+      border-radius: 50%;
+      margin-top: 15px;
+    }
+  }
+
+  .itemTasksContainerStyle {
+    padding: 20px 10px 0px 10px;
+  }
+
+  .bottomIconContainerStyle {
+    height: 7%;
+    width: 100%;
+    background-color: #fff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+}

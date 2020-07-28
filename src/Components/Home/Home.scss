@@ -1,0 +1,76 @@
+.homeContainerStyle {
+  height: 100%;
+  width: 100%;
+
+  .topContainerStyle {
+    height: 38%;
+    width: 100%;
+    background-color: #041f41;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    .topIconContainerStyle {
+      padding: 30px 20px 30px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .assistantImageStyle {
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      left: 39%;
+      top: 25%;
+    }
+  }
+
+  .chatStyle1,
+  .chatStyle2 {
+    height: 50px;
+    width: max-content;
+  }
+
+  .chatStyle2 {
+    background-color: #0747a6;
+    margin: 20px 10px 20px 70px;
+    border-radius: 20px;
+    border-bottom-right-radius: 1px;
+  }
+
+  .chatStyle1 {
+    margin: 20px 30px 20px 30px;
+    background-color: #e3edf8;
+    border-radius: 20px;
+    border-bottom-left-radius: 1px;
+  }
+
+  .micIconContainerOuterStyle {
+    height: 45px;
+    width: 45px;
+    background-color: rgba(7, 71, 166, 0.2);
+    border-radius: 50%;
+    left: 43.5%;
+    position: relative;
+    .micIconContainerInnerStyle {
+      height: 35px;
+      width: 35px;
+      background-color: #0747a6;
+      border-radius: 50%;
+      position: relative;
+      top: 5px;
+      left: 5.2px;
+    }
+  }
+
+  .bottomIconContainerStyle {
+    height: 7%;
+    width: 100%;
+    background-color: #fff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+}

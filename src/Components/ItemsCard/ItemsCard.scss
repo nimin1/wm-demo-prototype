@@ -1,0 +1,11 @@
+.itemsCardContainerStyle {
+  display: flex;
+  position: relative;
+  .cardIconContainerStyle {
+    min-height: 55px;
+    min-width: 55px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+}

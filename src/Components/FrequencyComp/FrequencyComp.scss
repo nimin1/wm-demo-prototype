@@ -1,0 +1,46 @@
+.freqContainerStyle {
+  margin: 40px 20px 30px 20px;
+  display: flex;
+
+  .freqStick1,
+  .freqStick2,
+  .freqStick3,
+  .freqStick4,
+  .freqStick5,
+  .freqStick6 {
+    width: 2px;
+    background-color: #0747a6;
+    margin-left: 1.5px;
+  }
+  .freqStick1 {
+    height: 20px;
+  }
+  .freqStick2 {
+    height: 19px;
+    margin-top: 0.5px;
+  }
+  .freqStick3 {
+    height: 18px;
+    margin-top: 1px;
+  }
+  .freqStick4 {
+    height: 17px;
+    margin-top: 1.5px;
+  }
+  .freqStick5 {
+    height: 16px;
+    margin-top: 2px;
+  }
+  .freqStick6 {
+    height: 15px;
+    margin-top: 2.5px;
+  }
+  .freqStick7 {
+    height: 14px;
+    margin-top: 3px;
+  }
+  .freqStick8 {
+    height: 13px;
+    margin-top: 3.5px;
+  }
+}
