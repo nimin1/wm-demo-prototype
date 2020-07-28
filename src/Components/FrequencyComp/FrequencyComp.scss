@@ -1,6 +1,10 @@
 .freqContainerStyle {
-  margin: 40px 20px 30px 20px;
+  margin: 40px 10px 30px 13px;
   display: flex;
+
+  .freqContainerInnerStyle {
+    display: flex;
+  }
 
   .freqStick1,
   .freqStick2,
@@ -11,6 +15,7 @@
     width: 2px;
     background-color: #0747a6;
     margin-left: 1.5px;
+    animation: crescendo 1s alternate infinite ease-in;
   }
   .freqStick1 {
     height: 20px;
@@ -42,5 +47,10 @@
   .freqStick8 {
     height: 13px;
     margin-top: 3.5px;
+  }
+
+  @keyframes crescendo {
+    0%   {transform: scale(.8);}
+    100% {transform: scale(1.2);}
   }
 }

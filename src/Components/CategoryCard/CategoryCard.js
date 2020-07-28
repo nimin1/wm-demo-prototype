@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 
 const CategoryCard = (props) => {
   const classes = useStyles();
-  const { cardId, category } = props;
+  const { cardId, category, categoryClicked } = props;
   const { cardTitle, cardTaskTitle, cardColor } = category;
 
   const iconStyle = {
@@ -49,7 +49,7 @@ const CategoryCard = (props) => {
   };
 
   return (
-    <div className="categoryCardContainer">
+    <div className="categoryCardContainer" onClick={categoryClicked}>
       <div className="categoryCardStyle" style={{ backgroundColor: cardColor }}>
         {findIconForCard(cardId)}
         <Typography className={classes.categoryTitleStyle}>

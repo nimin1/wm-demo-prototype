@@ -51,6 +51,7 @@
     border-radius: 50%;
     left: 43.5%;
     position: relative;
+    animation: micframes 1s alternate infinite ease-in;
     .micIconContainerInnerStyle {
       height: 35px;
       width: 35px;
@@ -60,6 +61,11 @@
       top: 5px;
       left: 5.2px;
     }
+  }
+
+  @keyframes micframes {
+    0%   {transform: scale(1);}
+    100% {transform: scale(1.1);}
   }
 
   .bottomIconContainerStyle {

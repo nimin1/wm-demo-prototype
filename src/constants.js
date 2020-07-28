@@ -2,24 +2,28 @@ export const categoryCardDetails = [
   {
     cardId: "1001",
     cardTitle: "Meetings",
+    cardMatch: "Meetings",
     cardTaskTitle: "8 Requests",
     cardColor: "rgba(255, 192, 56, 1)",
   },
   {
     cardId: "1002",
     cardTitle: "Mails",
+    cardMatch: "Mail",
     cardTaskTitle: "12 Unread",
     cardColor: "rgba(11, 165, 254, 1)",
   },
   {
     cardId: "1003",
     cardTitle: "Approvals",
+    cardMatch: "Approval",
     cardTaskTitle: "19 Requests",
     cardColor: "rgba(255, 70, 117, 1)",
   },
   {
     cardId: "1004",
     cardTitle: "Concur",
+    cardMatch: "Concur",
     cardTaskTitle: "8 Requests",
     cardColor: "rgba(51, 51, 51, 1)",
   },
@@ -59,7 +63,7 @@ export const itemDetails = [
     metricCompletion: "Approved",
   },
   {
-    cardId: "2004",
+    cardId: "2091",
     cardTitle: "AD Change Request - Tom",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
@@ -75,7 +79,7 @@ export const itemDetails = [
     metricCompletion: "70%",
   },
   {
-    cardId: "2005",
+    cardId: "2051",
     cardTitle: "Concur Approval - Rakesh",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",

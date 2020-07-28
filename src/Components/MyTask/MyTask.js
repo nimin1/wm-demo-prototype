@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AppsIcon from "@material-ui/icons/Apps";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
@@ -55,6 +55,7 @@ const useStyles = makeStyles({
 const MyTask = () => {
   const classes = useStyles();
   const history = useHistory();
+  const [filteredState, setFilteredState] = useState(itemDetails);
 
   const topContainerIconsStyle = {
     color: "#fff",
@@ -80,6 +81,14 @@ const MyTask = () => {
     history.push("/");
   };
 
+  const categoryClicked = (category) => {
+    const filteredItemDetails = itemDetails.filter(
+      (cardEle) => cardEle.cardCategory === category.cardMatch
+    );
+
+    setFilteredState(filteredItemDetails);
+  };
+
   return (
     <div className="myTaskContainerStyle">
       <div className="topContainerStyle">
@@ -95,6 +104,7 @@ const MyTask = () => {
                 key={category.cardId}
                 cardId={category.cardId}
                 category={category}
+                categoryClicked={() => categoryClicked(category)}
               />
             ))}
           </div>
@@ -109,7 +119,7 @@ const MyTask = () => {
       <Divider className={classes.todayDividerStyle} />
       <SimpleBar style={{ height: 320 }}>
         <div className="itemTasksContainerStyle">
-          {itemDetails.map((item) => (
+          {filteredState.map((item) => (
             <ItemsCard key={item.cardId} item={item} />
           ))}
         </div>

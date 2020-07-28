@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import AppsIcon from "@material-ui/icons/Apps";
 import SearchIcon from "@material-ui/icons/Search";
 import MicIcon from "@material-ui/icons/Mic";
@@ -78,9 +78,29 @@ const Home = () => {
     top: 10,
   };
 
-  const navigateToList = () => {
+  const [secondMessage, setSecondMessage] = useState(false);
+  const [thirdMessage, setThirdMessage] = useState(false);
+
+  const navigateToList = useCallback(() => {
     history.push("/mytask");
-  };
+  }, [history]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSecondMessage(true);
+    }, 1000);
+    setTimeout(() => {
+      setThirdMessage(true);
+    }, 3500);
+  }, []);
+
+  useEffect(() => {
+    if (thirdMessage) {
+      setTimeout(() => {
+        navigateToList();
+      }, 1000);
+    }
+  }, [thirdMessage, navigateToList]);
 
   return (
     <div className="homeContainerStyle">
@@ -103,14 +123,18 @@ const Home = () => {
         </Typography>
       </div>
       <div className="chatStyle2">
-        <Typography className={classes.userTextStyle}>
-          Take me to my Today's Task List.
-        </Typography>
+        {secondMessage && (
+          <Typography className={classes.userTextStyle}>
+            Take me to my Today's Task List.
+          </Typography>
+        )}
       </div>
       <div className="chatStyle1">
-        <Typography className={classes.assistantTextStyle}>
-          Okay! Here you go.....
-        </Typography>
+        {thirdMessage && (
+          <Typography className={classes.assistantTextStyle}>
+            Okay! Here you go.....
+          </Typography>
+        )}
       </div>
       <FrequencyComp />
       <div className="micIconContainerOuterStyle">

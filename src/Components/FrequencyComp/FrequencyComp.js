@@ -8,7 +8,7 @@ const FrequencyComp = () => {
   return (
     <div className="freqContainerStyle">
       {freqArray.map((ele, index) => (
-        <>
+        <div className="freqContainerInnerStyle" key={index}>
           <div className="freqStick1"></div>
           <div className="freqStick2"></div>
           <div className="freqStick3"></div>
@@ -23,8 +23,7 @@ const FrequencyComp = () => {
           <div className="freqStick4"></div>
           <div className="freqStick3"></div>
           <div className="freqStick2"></div>
-          <div className="freqStick1"></div>
-        </>
+        </div>
       ))}
     </div>
   );
