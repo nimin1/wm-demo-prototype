@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AppsIcon from "@material-ui/icons/Apps";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
@@ -52,10 +52,11 @@ const useStyles = makeStyles({
   },
 });
 
-const MyTask = () => {
+const MyTask = (props) => {
   const classes = useStyles();
   const history = useHistory();
   const [filteredState, setFilteredState] = useState(itemDetails);
+  const { selectedItem } = props;
 
   const topContainerIconsStyle = {
     color: "#fff",
@@ -88,6 +89,19 @@ const MyTask = () => {
 
     setFilteredState(filteredItemDetails);
   };
+
+  useEffect(() => {
+    console.log("selectedItem =", selectedItem)
+    if(selectedItem) {
+      const filteredItemDetails = itemDetails.filter(
+        (cardEle) => cardEle.cardCategory === selectedItem
+      );
+
+      setFilteredState(filteredItemDetails)
+    } else {
+      setFilteredState(itemDetails)
+    }
+  }, [selectedItem])
 
   return (
     <div className="myTaskContainerStyle">

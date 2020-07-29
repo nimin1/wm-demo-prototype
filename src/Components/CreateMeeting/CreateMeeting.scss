@@ -1,0 +1,91 @@
+.createMeetingContainer {
+  height: 100%;
+  width: 100%;
+
+  .topContainerStyle {
+    height: 23%;
+    width: 100%;
+    background-color: #041f41;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    .topIconContainerStyle {
+      padding: 30px 20px 20px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .meetingTitleStyle,
+  .meetingTitleDescStyle {
+    margin-top: 25px;
+    position: relative;
+    left: 3px;
+    border: none;
+    background-color: rgba(47, 129, 231, 0.2);
+    height: 48px;
+    width: 80%;
+    border-radius: 10px;
+    padding: 3px 10px 0px 25px;
+    font-family: monospace;
+    font-size: 13px;
+  }
+
+  .meetingTitleDescStyle {
+    height: 100px;
+    margin-top: 17px;
+    padding-top: 0px;
+  }
+
+  .meetingDetailsStyle,
+  .meetingDetailsTimeStyle {
+    display: flex;
+    justify-content: left;
+    padding: 15px 30px 0px 30px;
+
+    .meetingDetailsIconStyle {
+      height: 60px;
+      width: 60px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+  }
+
+  .faceIconContainerStyle {
+    display: flex;
+    justify-content: left;
+    padding: 10px 10px 0px 30px;
+  }
+
+  .faceIconContainerStyle1 {
+    display: flex;
+    justify-content: left;
+    padding: 3px 10px 0px 35px;
+  }
+
+  .notifyOnSlackStyle {
+    display: flex;
+    justify-content: left;
+    padding: 10px 10px 4px 25px;
+  }
+
+  .createMeetingButtonStyle {
+    background-color: #041f41;
+    height: 39px;
+    width: 85%;
+    margin-left: 28px;
+    border-radius: 4px;
+  }
+
+  .meetingDetailsTimeStyle {
+    padding-top: 10px;
+  }
+
+  .slackIconStyle {
+    height: 21px;
+    width: 21px;
+    position: relative;
+    top: 8px;
+    left: 8px;
+  }
+}

@@ -44,7 +44,7 @@ export const chatMessages = [
   },
   {
     assistantMsg1: "Hey Rob! How can I help you?",
-    userMsg: "Schedule meeting with Rob and Debbie for Tommorow",
+    userMsg: "Schedule meeting with Alex, Debbie and Me for Tommorow",
     assistantMsg2: "Okay! Here you go",
     routeTo: "/schedulemeeting",
   },
@@ -140,7 +140,7 @@ export const itemDetails = [
     cardTitle: "Concur Approval - Rakesh",
     cardTaskTitle: "Requested on 8:00 am",
     cardColor: "rgb(51, 51, 51)",
-    cardCategory: "Concur",
+    cardCategory: "Approval",
     metricCompletion: "Approved",
   },
   {
@@ -180,7 +180,7 @@ export const itemDetails = [
     cardTitle: "Concur Approval - Alan",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
-    cardCategory: "Concur",
+    cardCategory: "Approval",
     metricCompletion: "Approved",
   },
   {
@@ -220,7 +220,7 @@ export const itemDetails = [
     cardTitle: "Concur Prioritization Approval - Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
-    cardCategory: "Concur",
+    cardCategory: "Approval",
     metricCompletion: "Approved",
   },
   {
@@ -260,7 +260,7 @@ export const itemDetails = [
     cardTitle: "Concur Prioritization Approval - Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
-    cardCategory: "Concur",
+    cardCategory: "Approval",
     metricCompletion: "Approved",
   },
   {
@@ -300,7 +300,7 @@ export const itemDetails = [
     cardTitle: "Concur Prioritization Approval - Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
-    cardCategory: "Concur",
+    cardCategory: "Approval",
     metricCompletion: "Approved",
   },
   {
@@ -340,7 +340,7 @@ export const itemDetails = [
     cardTitle: "Concur Prioritization Approval - Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
-    cardCategory: "Concur",
+    cardCategory: "Approval",
     metricCompletion: "Approved",
   },
   {
@@ -380,7 +380,7 @@ export const itemDetails = [
     cardTitle: "Concur Prioritization Approval - Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
-    cardCategory: "Concur",
+    cardCategory: "Approval",
     metricCompletion: "Approved",
   },
   {
@@ -420,7 +420,7 @@ export const itemDetails = [
     cardTitle: "Concur Prioritization Approval - Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
-    cardCategory: "Concur",
+    cardCategory: "Approval",
     metricCompletion: "Approved",
   },
   {
@@ -460,7 +460,7 @@ export const itemDetails = [
     cardTitle: "Concur Prioritization Approval - Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
-    cardCategory: "Concur",
+    cardCategory: "Approval",
     metricCompletion: "Approved",
   },
   {
