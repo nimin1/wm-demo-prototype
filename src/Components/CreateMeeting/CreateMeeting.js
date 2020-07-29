@@ -1,5 +1,14 @@
 import React from "react";
-import { Typography, Checkbox, makeStyles } from "@material-ui/core";
+import {
+  Typography,
+  Checkbox,
+  makeStyles,
+  Menu,
+  MenuItem,
+  withStyles,
+  ListItemIcon,
+  ListItemText,
+} from "@material-ui/core";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import DateRangeIcon from "@material-ui/icons/DateRange";
 import ScheduleIcon from "@material-ui/icons/Schedule";
@@ -69,11 +78,57 @@ const useStyles = makeStyles({
     position: "relative",
     top: 8,
   },
+  listItemTextStyle: {
+    fontSize: 12,
+    fontFamily: "monospace",
+    fontWeight: 600,
+    marginLeft: -18,
+  },
 });
+
+const StyledMenu = withStyles({
+  paper: {
+    border: "1px solid #d3d4d5",
+  },
+})((props) => (
+  <Menu
+    elevation={0}
+    getContentAnchorEl={null}
+    anchorOrigin={{
+      vertical: "bottom",
+      horizontal: "center",
+    }}
+    transformOrigin={{
+      vertical: "top",
+      horizontal: "center",
+    }}
+    {...props}
+  />
+));
+
+const StyledMenuItem = withStyles((theme) => ({
+  root: {
+    "&:focus": {
+      backgroundColor: theme.palette.primary.main,
+      "& .MuiListItemIcon-root, & .MuiListItemText-primary": {
+        color: theme.palette.common.white,
+      },
+    },
+  },
+}))(MenuItem);
 
 const CreateMeeting = (props) => {
   const classes = useStyles();
   const history = useHistory();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   const topContainerIconsStyle = {
     color: "#fff",
@@ -128,11 +183,11 @@ const CreateMeeting = (props) => {
         </Typography>
       </div>
       <div className="meetingDetailsTimeStyle">
-        <div className="meetingDetailsIconStyle">
+        <div className="meetingDetailsIconStyle" onClick={handleClick}>
           <ScheduleIcon style={calendarIconStyle} />
         </div>
         <Typography className={classes.meetingDetailsStyle}>
-          11:00 AM - 1:00 PM
+          11:00 AM - 12:00 PM
         </Typography>
       </div>
       <input
@@ -170,6 +225,41 @@ const CreateMeeting = (props) => {
           Create Meeting
         </Typography>
       </div>
+      <StyledMenu
+        id="customized-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <StyledMenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <ScheduleIcon fontSize="small" />
+          </ListItemIcon>
+          <ListItemText
+            classes={{ primary: classes.listItemTextStyle }}
+            primary="2:00 PM - 3:00 PM"
+          />
+        </StyledMenuItem>
+        <StyledMenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <ScheduleIcon fontSize="small" />
+          </ListItemIcon>
+          <ListItemText
+            classes={{ primary: classes.listItemTextStyle }}
+            primary="1:30 PM - 2:30 PM"
+          />
+        </StyledMenuItem>
+        <StyledMenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <ScheduleIcon fontSize="small" />
+          </ListItemIcon>
+          <ListItemText
+            classes={{ primary: classes.listItemTextStyle }}
+            primary="5:00 PM - 6:00 PM"
+          />
+        </StyledMenuItem>
+      </StyledMenu>
     </div>
   );
 };

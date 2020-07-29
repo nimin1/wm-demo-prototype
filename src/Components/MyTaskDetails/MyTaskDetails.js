@@ -115,7 +115,7 @@ const useStyles = makeStyles({
     fontSize: 12,
     fontFamily: "monospace",
     fontWeight: 600,
-    marginLeft: -18,
+    marginLeft: -25,
   },
 });
 
