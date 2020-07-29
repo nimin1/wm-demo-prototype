@@ -7,9 +7,10 @@ import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import DraftsIcon from "@material-ui/icons/Drafts";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
+import { Typography, makeStyles } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 import "./ItemsCard.scss";
-import { Typography, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   cardTitleStyle: {
@@ -53,6 +54,7 @@ const useStyles = makeStyles({
 
 const ItemsCard = (props) => {
   const classes = useStyles();
+  const history = useHistory();
   const { item } = props;
   const {
     cardTitle,
@@ -165,8 +167,12 @@ const ItemsCard = (props) => {
     }
   };
 
+  const navigateToTaskDetails = () => {
+    history.push("/mytaskdetails");
+  };
+
   return (
-    <div className="itemsCardContainerStyle">
+    <div className="itemsCardContainerStyle" onClick={navigateToTaskDetails}>
       <div
         className="cardIconContainerStyle"
         style={{ backgroundColor: cardColor }}

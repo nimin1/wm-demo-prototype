@@ -1,0 +1,71 @@
+.myTaskDetailsContainer {
+  height: 100%;
+  width: 100%;
+
+  .taskDetailsTopContainerStyle {
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    .taskDetailsTopIconContainerStyle {
+      padding: 20px 20px 10px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .subTitleStyle {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .deadlineDetails {
+      display: flex;
+      min-width: 63%;
+      background-color: rgba(0, 0, 0, 0.1);
+      height: 46px;
+      border-radius: 8px;
+      margin-top: 25px;
+      margin-left: 7%;
+    }
+  }
+
+  .bottomIconContainerStyle {
+    height: 38%;
+    width: 100%;
+    background-color: #041f41;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    position: absolute;
+    bottom: 0px;
+
+    .bottomIconTopContainerStyle {
+      width: 100%;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+
+      .bottomIconTopIconContainerStyle {
+        padding: 25px 20px 15px 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .documentIconContainerStyle {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      padding: 10px;
+      padding-top: 2px;
+      position: relative;
+
+      .documentContainerStyle {
+        height: 60px;
+        width: 95px;
+        background-color: #fff;
+        border-radius: 7px;
+        margin-top: 7px;
+      }
+    }
+  }
+}

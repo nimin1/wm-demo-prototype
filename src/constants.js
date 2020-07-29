@@ -29,11 +29,68 @@ export const categoryCardDetails = [
   },
 ];
 
+export const chatMessages = [
+  {
+    assistantMsg1: "Hey Rob! How can I help you?",
+    userMsg: "Take me to my Today's Task List",
+    assistantMsg2: "Okay! Here you go",
+    routeTo: "/mytask",
+  },
+  {
+    assistantMsg1: "Hey Rob! How can I help you?",
+    userMsg: "Take me to my Today's Approval List",
+    assistantMsg2: "Okay! Here you go",
+    routeTo: "/myapprovals",
+  },
+  {
+    assistantMsg1: "Hey Rob! How can I help you?",
+    userMsg: "Schedule meeting with Rob and Debbie for Tommorow",
+    assistantMsg2: "Okay! Here you go",
+    routeTo: "/schedulemeeting",
+  },
+  {
+    assistantMsg1: "Hey Rob! How can I help you?",
+    userMsg: "Take me to my Today's Meeting List",
+    assistantMsg2: "Okay! Here you go",
+    routeTo: "/mymeetings",
+  },
+];
+
+export const documentList = [
+  {
+    itemId: "3001",
+    itemTitle: "Questionaires",
+  },
+  {
+    itemId: "3002",
+    itemTitle: "Presentation",
+  },
+  {
+    itemId: "3003",
+    itemTitle: "Assets",
+  },
+  {
+    itemId: "3004",
+    itemTitle: "Branding",
+  },
+  {
+    itemId: "3005",
+    itemTitle: "Timeline",
+  },
+  {
+    itemId: "3006",
+    itemTitle: "Plan",
+  },
+];
+
+export const taskDetailsDesc =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged";
+
 export const itemDetails = [
   {
     cardId: "2001",
-    cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 AM - 9:15 AM",
+    cardTitle: "Innovation Discussion",
+    cardTaskTitle: "9:00 am - 9:15 am",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "80%",
@@ -73,7 +130,7 @@ export const itemDetails = [
   {
     cardId: "2002",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 AM - 11:00 AM",
+    cardTaskTitle: "10:00 am - 11:00 am",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "70%",
@@ -81,7 +138,7 @@ export const itemDetails = [
   {
     cardId: "2051",
     cardTitle: "Concur Approval - Rakesh",
-    cardTaskTitle: "Requested on 8:00 AM",
+    cardTaskTitle: "Requested on 8:00 am",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Concur",
     metricCompletion: "Approved",
@@ -89,7 +146,7 @@ export const itemDetails = [
   {
     cardId: "2006",
     cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 AM - 9:15 AM",
+    cardTaskTitle: "9:00 am - 9:15 am",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "40%",

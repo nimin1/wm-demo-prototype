@@ -11,6 +11,7 @@ import { Typography, makeStyles } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
 import "./Home.scss";
+import { chatMessages } from "../../constants";
 import FrequencyComp from "../FrequencyComp/FrequencyComp";
 import assistantImage from "./assets/assistant2.png";
 
@@ -80,33 +81,69 @@ const Home = () => {
 
   const [secondMessage, setSecondMessage] = useState(false);
   const [thirdMessage, setThirdMessage] = useState(false);
+  const [messageItem, setMessageItem] = useState(false);
+  const [chatMessage, setChatMessage] = useState(null);
+  const [navigateToRoute, setNavigateToRoute] = useState(true);
 
-  const navigateToList = useCallback(() => {
-    history.push("/mytask");
-  }, [history]);
+  const navigateToList = useCallback(
+    (route) => {
+      if (route) {
+        history.push(route);
+      } else {
+        history.push("/mytask");
+      }
+    },
+    [history]
+  );
+
+  const micIconClicked = () => {
+    if (messageItem < chatMessages.length) {
+      setChatMessage(null);
+      setMessageItem(messageItem + 1);
+    }
+  };
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer1 = setTimeout(() => {
       setSecondMessage(true);
     }, 1000);
-    setTimeout(() => {
+    const timer2 = setTimeout(() => {
       setThirdMessage(true);
     }, 3500);
-  }, []);
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
+  }, [secondMessage, thirdMessage]);
 
   useEffect(() => {
-    if (thirdMessage) {
+    if (thirdMessage && navigateToRoute) {
       setTimeout(() => {
-        navigateToList();
-      }, 1000);
+        navigateToList(chatMessage ? chatMessage.routeTo : null);
+      }, 500);
     }
-  }, [thirdMessage, navigateToList]);
+  }, [thirdMessage, chatMessage, navigateToList, navigateToRoute]);
+
+  useEffect(() => {
+    if (messageItem < chatMessages.length) {
+      setChatMessage(chatMessages[messageItem]);
+      setSecondMessage(false);
+      setThirdMessage(false);
+    }
+  }, [messageItem]);
+
+  useEffect(() => {
+    setChatMessage(chatMessages[0]);
+  }, []);
 
   return (
     <div className="homeContainerStyle">
       <div className="topContainerStyle">
         <div className="topIconContainerStyle">
-          <AppsIcon style={topContainerIconsStyle} />
+          <AppsIcon
+            style={topContainerIconsStyle}
+            onClick={() => setNavigateToRoute(!navigateToRoute)}
+          />
           <SearchIcon style={topContainerIconsStyle} />
         </div>
         <Typography className={classes.taskAssistantTextStyle}>
@@ -117,29 +154,33 @@ const Home = () => {
         </Typography>
         <img src={assistantImage} className="assistantImageStyle" alt="" />
       </div>
-      <div className="chatStyle1">
-        <Typography className={classes.assistantTextStyle}>
-          Hey Rob! How can I help you?
-        </Typography>
-      </div>
-      <div className="chatStyle2">
-        {secondMessage && (
-          <Typography className={classes.userTextStyle}>
-            Take me to my Today's Task List.
-          </Typography>
-        )}
-      </div>
-      <div className="chatStyle1">
-        {thirdMessage && (
-          <Typography className={classes.assistantTextStyle}>
-            Okay! Here you go.....
-          </Typography>
-        )}
-      </div>
+      {chatMessage && (
+        <div className="chatContainerStyle">
+          <div className="chatStyle1">
+            <Typography className={classes.assistantTextStyle}>
+              {chatMessage.assistantMsg1}
+            </Typography>
+          </div>
+          <div className="chatStyle2">
+            {secondMessage && (
+              <Typography className={classes.userTextStyle}>
+                {chatMessage.userMsg}
+              </Typography>
+            )}
+          </div>
+          <div className="chatStyle1">
+            {thirdMessage && (
+              <Typography className={classes.assistantTextStyle}>
+                {chatMessage.assistantMsg2}
+              </Typography>
+            )}
+          </div>
+        </div>
+      )}
       <FrequencyComp />
       <div className="micIconContainerOuterStyle">
         <div className="micIconContainerInnerStyle">
-          <MicIcon style={micIconStyle} />
+          <MicIcon style={micIconStyle} onClick={micIconClicked} />
         </div>
       </div>
       <div className="bottomIconContainerStyle">
@@ -148,7 +189,7 @@ const Home = () => {
         <AddCommentOutlinedIcon style={selectedBottomContainerIconsStyle} />
         <ListOutlinedIcon
           style={bottomContainerIconsStyle}
-          onClick={navigateToList}
+          onClick={() => navigateToList(null)}
         />
         <PersonOutlineOutlinedIcon style={bottomContainerIconsStyle} />
       </div>
