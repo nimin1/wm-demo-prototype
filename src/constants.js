@@ -44,7 +44,7 @@ export const chatMessages = [
   },
   {
     assistantMsg1: "Hey Rob! How can I help you?",
-    userMsg: "Schedule meeting with Alex, Debbie and Me for Tommorow",
+    userMsg: "Schedule meeting with Alex, Debbie for Tommorow",
     assistantMsg2: "Okay! Here you go",
     routeTo: "/schedulemeeting",
   },
