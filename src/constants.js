@@ -90,7 +90,7 @@ export const itemDetails = [
   {
     cardId: "2001",
     cardTitle: "Innovation Discussion",
-    cardTaskTitle: "9:00 am - 9:15 am",
+    cardTaskTitle: "9:00 am, 9:15 am",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "80%",
@@ -113,7 +113,7 @@ export const itemDetails = [
   },
   {
     cardId: "2004",
-    cardTitle: "AD Change Request - Sofie",
+    cardTitle: "AD Change Request, Sofie",
     cardTaskTitle: "High Priority, Requested on 8:00 AM",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -121,7 +121,7 @@ export const itemDetails = [
   },
   {
     cardId: "2091",
-    cardTitle: "AD Change Request - Tom",
+    cardTitle: "AD Change Request, Tom",
     cardTaskTitle: "High Priority, Requested on 8:30 AM",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -130,14 +130,14 @@ export const itemDetails = [
   {
     cardId: "2002",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 am - 11:00 am",
+    cardTaskTitle: "10:00 am, 11:00 am",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "70%",
   },
   {
     cardId: "2051",
-    cardTitle: "Concur Approval - Rakesh",
+    cardTitle: "Concur Approval, Rakesh",
     cardTaskTitle: "High Priority, Requested on 9:12 am",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -146,7 +146,7 @@ export const itemDetails = [
   {
     cardId: "2006",
     cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 am - 9:15 am",
+    cardTaskTitle: "9:00 am, 9:15 am",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "40%",
@@ -154,14 +154,14 @@ export const itemDetails = [
   {
     cardId: "2007",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 AM - 11:00 AM",
+    cardTaskTitle: "10:00 AM, 11:00 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "90%",
   },
   {
     cardId: "2008",
-    cardTitle: "MOM - Transition Meeting",
+    cardTitle: "MOM, Transition Meeting",
     cardTaskTitle: "Medium Priority",
     cardColor: "rgb(11, 165, 254)",
     cardCategory: "Mail",
@@ -169,7 +169,7 @@ export const itemDetails = [
   },
   {
     cardId: "2009",
-    cardTitle: "AD Delete Request - Debbie",
+    cardTitle: "AD Delete Request, Debbie",
     cardTaskTitle: "High Priority, Approved on 26 Jul",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -177,7 +177,7 @@ export const itemDetails = [
   },
   {
     cardId: "2010",
-    cardTitle: "Concur Approval - Alan",
+    cardTitle: "Concur Approval, Alan",
     cardTaskTitle: "Medium Priority, Requested on 24 Jul",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -186,7 +186,7 @@ export const itemDetails = [
   {
     cardId: "2011",
     cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 AM - 9:15 AM",
+    cardTaskTitle: "9:00 AM, 9:15 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -194,7 +194,7 @@ export const itemDetails = [
   {
     cardId: "2012",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 AM - 11:00 AM",
+    cardTaskTitle: "10:00 AM, 11:00 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -209,7 +209,7 @@ export const itemDetails = [
   },
   {
     cardId: "2014",
-    cardTitle: "AD Group Member Change Request - Sofie",
+    cardTitle: "AD Group Member Change Request, Sofie",
     cardTaskTitle: "Medium Priority, Requested on Jul 23",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -217,7 +217,7 @@ export const itemDetails = [
   },
   {
     cardId: "2015",
-    cardTitle: "Concur Prioritization Approval - Sofie",
+    cardTitle: "Concur Prioritization Approval, Sofie",
     cardTaskTitle: "Medium Priority, Requested on 10:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -226,7 +226,7 @@ export const itemDetails = [
   {
     cardId: "2016",
     cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 AM - 9:15 AM",
+    cardTaskTitle: "9:00 AM, 9:15 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -234,7 +234,7 @@ export const itemDetails = [
   {
     cardId: "2017",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 AM - 11:00 AM",
+    cardTaskTitle: "10:00 AM, 11:00 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -249,7 +249,7 @@ export const itemDetails = [
   },
   {
     cardId: "2019",
-    cardTitle: "AD Group Member Change Request - Sofie",
+    cardTitle: "AD Group Member Change Request, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -257,7 +257,7 @@ export const itemDetails = [
   },
   {
     cardId: "2020",
-    cardTitle: "Concur Prioritization Approval - Sofie",
+    cardTitle: "Concur Prioritization Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -266,7 +266,7 @@ export const itemDetails = [
   {
     cardId: "2021",
     cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 AM - 9:15 AM",
+    cardTaskTitle: "9:00 AM, 9:15 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -274,7 +274,7 @@ export const itemDetails = [
   {
     cardId: "2022",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 AM - 11:00 AM",
+    cardTaskTitle: "10:00 AM, 11:00 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -289,7 +289,7 @@ export const itemDetails = [
   },
   {
     cardId: "2024",
-    cardTitle: "AD Group Member Change Request - Sofie",
+    cardTitle: "AD Group Member Change Request, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -297,7 +297,7 @@ export const itemDetails = [
   },
   {
     cardId: "2025",
-    cardTitle: "Concur Prioritization Approval - Sofie",
+    cardTitle: "Concur Prioritization Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -306,7 +306,7 @@ export const itemDetails = [
   {
     cardId: "2026",
     cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 AM - 9:15 AM",
+    cardTaskTitle: "9:00 AM, 9:15 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -314,7 +314,7 @@ export const itemDetails = [
   {
     cardId: "2027",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 AM - 11:00 AM",
+    cardTaskTitle: "10:00 AM, 11:00 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -329,7 +329,7 @@ export const itemDetails = [
   },
   {
     cardId: "2029",
-    cardTitle: "AD Group Member Change Request - Sofie",
+    cardTitle: "AD Group Member Change Request, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -337,7 +337,7 @@ export const itemDetails = [
   },
   {
     cardId: "2030",
-    cardTitle: "Concur Prioritization Approval - Sofie",
+    cardTitle: "Concur Prioritization Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -346,7 +346,7 @@ export const itemDetails = [
   {
     cardId: "2031",
     cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 AM - 9:15 AM",
+    cardTaskTitle: "9:00 AM, 9:15 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -354,7 +354,7 @@ export const itemDetails = [
   {
     cardId: "2032",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 AM - 11:00 AM",
+    cardTaskTitle: "10:00 AM, 11:00 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -369,7 +369,7 @@ export const itemDetails = [
   },
   {
     cardId: "2034",
-    cardTitle: "AD Group Member Change Request - Sofie",
+    cardTitle: "AD Group Member Change Request, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -377,7 +377,7 @@ export const itemDetails = [
   },
   {
     cardId: "2035",
-    cardTitle: "Concur Prioritization Approval - Sofie",
+    cardTitle: "Concur Prioritization Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -386,7 +386,7 @@ export const itemDetails = [
   {
     cardId: "2036",
     cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 AM - 9:15 AM",
+    cardTaskTitle: "9:00 AM, 9:15 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -394,7 +394,7 @@ export const itemDetails = [
   {
     cardId: "2037",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 AM - 11:00 AM",
+    cardTaskTitle: "10:00 AM, 11:00 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -409,7 +409,7 @@ export const itemDetails = [
   },
   {
     cardId: "2039",
-    cardTitle: "AD Group Member Change Request - Sofie",
+    cardTitle: "AD Group Member Change Request, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -417,7 +417,7 @@ export const itemDetails = [
   },
   {
     cardId: "2040",
-    cardTitle: "Concur Prioritization Approval - Sofie",
+    cardTitle: "Concur Prioritization Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -426,7 +426,7 @@ export const itemDetails = [
   {
     cardId: "2041",
     cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 AM - 9:15 AM",
+    cardTaskTitle: "9:00 AM, 9:15 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -434,7 +434,7 @@ export const itemDetails = [
   {
     cardId: "2042",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 AM - 11:00 AM",
+    cardTaskTitle: "10:00 AM, 11:00 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -449,7 +449,7 @@ export const itemDetails = [
   },
   {
     cardId: "2044",
-    cardTitle: "AD Group Member Change Request - Sofie",
+    cardTitle: "AD Group Member Change Request, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -457,7 +457,7 @@ export const itemDetails = [
   },
   {
     cardId: "2045",
-    cardTitle: "Concur Prioritization Approval - Sofie",
+    cardTitle: "Concur Prioritization Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -466,7 +466,7 @@ export const itemDetails = [
   {
     cardId: "2046",
     cardTitle: "Daily Scrum Call",
-    cardTaskTitle: "9:00 AM - 9:15 AM",
+    cardTaskTitle: "9:00 AM, 9:15 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",
@@ -474,7 +474,7 @@ export const itemDetails = [
   {
     cardId: "2047",
     cardTitle: "Leader's TownHall",
-    cardTaskTitle: "10:00 AM - 11:00 AM",
+    cardTaskTitle: "10:00 AM, 11:00 AM",
     cardColor: "rgb(255, 192, 56)",
     cardCategory: "Meetings",
     metricCompletion: "50%",

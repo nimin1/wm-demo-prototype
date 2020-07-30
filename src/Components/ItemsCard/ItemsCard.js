@@ -7,6 +7,7 @@ import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import DraftsIcon from "@material-ui/icons/Drafts";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
+import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import { Typography, makeStyles } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
@@ -14,15 +15,14 @@ import "./ItemsCard.scss";
 
 const useStyles = makeStyles({
   cardTitleStyle: {
-    fontSize: "14.5px",
+    fontSize: "13.5px",
     fontWeight: 600,
-    margin: "7px 20px 0px 15px",
+    margin: "7px 0px 0px 15px",
     textAlign: "left",
     textOverflow: "ellipsis",
     overflow: "hidden",
     whiteSpace: "nowrap",
     fontFamily: "monospace",
-    width: 210,
   },
   cardTaskTitleStyle: {
     fontSize: "10px",
@@ -108,6 +108,13 @@ const ItemsCard = (props) => {
     width: 30,
   };
 
+  const linkStyle = {
+    marginLeft: 5,
+    height: 15,
+    marginTop: 8,
+    width: 15,
+  };
+
   const findIconForCard = (cardCategory) => {
     if (cardCategory === "Meetings") {
       return <GroupIcon style={iconStyle} />;
@@ -180,7 +187,12 @@ const ItemsCard = (props) => {
         {findIconForCard(cardCategory)}
       </div>
       <div>
-        <Typography className={classes.cardTitleStyle}>{cardTitle}</Typography>
+        <div className="cardTitleDivStyle">
+          <Typography className={classes.cardTitleStyle}>
+            {cardTitle}
+          </Typography>
+          <OpenInNewIcon style={linkStyle} />
+        </div>
         <Typography
           className={classes.cardTaskTitleStyle}
           style={
