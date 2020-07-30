@@ -25,8 +25,7 @@ const useStyles = makeStyles({
     width: 210,
   },
   cardTaskTitleStyle: {
-    fontSize: "12px",
-    fontWeight: 600,
+    fontSize: "10px",
     textAlign: "left",
     textOverflow: "ellipsis",
     overflow: "hidden",
@@ -34,6 +33,7 @@ const useStyles = makeStyles({
     fontFamily: "monospace",
     margin: "0px 20px 0px 15px",
     color: "rgba(0, 0, 0, 0.7)",
+    letterSpacing: 0,
   },
   circularProgressStyle: {
     position: "relative",
@@ -184,10 +184,11 @@ const ItemsCard = (props) => {
         <Typography
           className={classes.cardTaskTitleStyle}
           style={
-            cardTaskTitle.includes("High") || cardTaskTitle.includes("Delay")
-              ? { color: "red" }
-              : cardTaskTitle.includes("Approved")
+            cardTaskTitle.includes("Approved")
               ? { color: "green" }
+              : cardTaskTitle.includes("High") ||
+                cardTaskTitle.includes("Delay")
+              ? { color: "red" }
               : null
           }
         >
