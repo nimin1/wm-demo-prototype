@@ -29,7 +29,6 @@ const useStyles = makeStyles({
     color: "#fff",
     fontWeight: 600,
     margin: "0px 20px 0px 25px",
-    textAlign: "left",
     fontFamily: "monospace",
   },
   assistantTextStyle: {
@@ -147,10 +146,10 @@ const Home = () => {
           <SearchIcon style={topContainerIconsStyle} />
         </div>
         <Typography className={classes.taskAssistantTextStyle}>
-          Your WM Virtual Task
+          Your WM ONE Assistant
         </Typography>
         <Typography className={classes.taskAssistantTextStyle1}>
-          Assistant is Here!
+          is Here!!
         </Typography>
         <img src={assistantImage} className="assistantImageStyle" alt="" />
       </div>
