@@ -191,7 +191,9 @@ const ItemsCard = (props) => {
           <Typography className={classes.cardTitleStyle}>
             {cardTitle}
           </Typography>
-          <OpenInNewIcon style={linkStyle} />
+          {cardCategory.includes("Approval") && (
+            <OpenInNewIcon style={linkStyle} />
+          )}
         </div>
         <Typography
           className={classes.cardTaskTitleStyle}
