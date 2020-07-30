@@ -141,7 +141,7 @@ export const itemDetails = [
     cardTaskTitle: "High Priority, Requested on 9:12 am",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
-    metricCompletion: "Approved",
+    metricCompletion: "NotApproved",
   },
   {
     cardId: "2006",
@@ -209,7 +209,7 @@ export const itemDetails = [
   },
   {
     cardId: "2014",
-    cardTitle: "AD Group Member Change Request, Sofie",
+    cardTitle: "AD Group Change, Sofie",
     cardTaskTitle: "Medium Priority, Requested on Jul 23",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -217,7 +217,7 @@ export const itemDetails = [
   },
   {
     cardId: "2015",
-    cardTitle: "Concur Prioritization Approval, Sofie",
+    cardTitle: "Concur Approval, Sofie",
     cardTaskTitle: "Medium Priority, Requested on 10:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -249,7 +249,7 @@ export const itemDetails = [
   },
   {
     cardId: "2019",
-    cardTitle: "AD Group Member Change Request, Sofie",
+    cardTitle: "AD Group Change, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -257,7 +257,7 @@ export const itemDetails = [
   },
   {
     cardId: "2020",
-    cardTitle: "Concur Prioritization Approval, Sofie",
+    cardTitle: "Concur Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -289,7 +289,7 @@ export const itemDetails = [
   },
   {
     cardId: "2024",
-    cardTitle: "AD Group Member Change Request, Sofie",
+    cardTitle: "AD Group Change, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -297,7 +297,7 @@ export const itemDetails = [
   },
   {
     cardId: "2025",
-    cardTitle: "Concur Prioritization Approval, Sofie",
+    cardTitle: "Concur Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -329,7 +329,7 @@ export const itemDetails = [
   },
   {
     cardId: "2029",
-    cardTitle: "AD Group Member Change Request, Sofie",
+    cardTitle: "AD Group Change, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -337,7 +337,7 @@ export const itemDetails = [
   },
   {
     cardId: "2030",
-    cardTitle: "Concur Prioritization Approval, Sofie",
+    cardTitle: "Concur Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -369,7 +369,7 @@ export const itemDetails = [
   },
   {
     cardId: "2034",
-    cardTitle: "AD Group Member Change Request, Sofie",
+    cardTitle: "AD Group Change, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -377,7 +377,7 @@ export const itemDetails = [
   },
   {
     cardId: "2035",
-    cardTitle: "Concur Prioritization Approval, Sofie",
+    cardTitle: "Concur Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -409,7 +409,7 @@ export const itemDetails = [
   },
   {
     cardId: "2039",
-    cardTitle: "AD Group Member Change Request, Sofie",
+    cardTitle: "AD Group Change, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -417,7 +417,7 @@ export const itemDetails = [
   },
   {
     cardId: "2040",
-    cardTitle: "Concur Prioritization Approval, Sofie",
+    cardTitle: "Concur Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
@@ -449,7 +449,7 @@ export const itemDetails = [
   },
   {
     cardId: "2044",
-    cardTitle: "AD Group Member Change Request, Sofie",
+    cardTitle: "AD Group Change, Sofie",
     cardTaskTitle: "Delay by 1 day",
     cardColor: "rgb(255, 70, 117)",
     cardCategory: "Approval",
@@ -457,7 +457,7 @@ export const itemDetails = [
   },
   {
     cardId: "2045",
-    cardTitle: "Concur Prioritization Approval, Sofie",
+    cardTitle: "Concur Approval, Sofie",
     cardTaskTitle: "Requested on 8:00 AM",
     cardColor: "rgb(51, 51, 51)",
     cardCategory: "Approval",
