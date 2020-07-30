@@ -137,7 +137,7 @@ const CreateMeeting = (props) => {
   };
 
   const calendarIconStyle = {
-    color: "#feaf57",
+    color: "#041f41",
     height: 30,
     width: 30,
     position: "relative",

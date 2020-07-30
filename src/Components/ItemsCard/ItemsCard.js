@@ -10,6 +10,12 @@ import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import { Typography, makeStyles } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import outlookIcon from "../../assets/outlook_icon.png";
+import calendarIcon from "../../assets/calendar_icon.png";
+import serviceNowIcon from "../../assets/service_now.png";
+import concurIcon from "../../assets/concur_icon.png";
+import gitIcon from "../../assets/git_icon.png";
+import jiraIcon from "../../assets/jira_icon.png";
 
 import "./ItemsCard.scss";
 
@@ -62,6 +68,7 @@ const ItemsCard = (props) => {
     cardTaskTitle,
     cardColor,
     cardCategory,
+    cardType,
     metricCompletion,
   } = item;
 
@@ -118,13 +125,23 @@ const ItemsCard = (props) => {
 
   const findIconForCard = (cardCategory) => {
     if (cardCategory === "Meetings") {
-      return <GroupIcon style={iconStyle} />;
+      //return <GroupIcon style={iconStyle} />;
+      return <img src={calendarIcon} alt="" className="meetingIconStyle" />;
     } else if (cardCategory === "Mail") {
-      return <MailOutlineIcon style={iconStyle} />;
+      //return <MailOutlineIcon style={iconStyle} />;
+      return <img src={outlookIcon} alt="" className="outlookIconStyle" />;
     } else if (cardCategory === "Approval") {
-      return <RateReviewIcon style={iconStyle} />;
+      //return <RateReviewIcon style={iconStyle} />;
+      return <img src={serviceNowIcon} alt="" className="meetingIconStyle" />;
     } else if (cardCategory === "Concur") {
-      return <AssignmentIndIcon style={iconStyle} />;
+      //return <AssignmentIndIcon style={iconStyle} />;
+      return <img src={concurIcon} alt="" className="meetingIconStyle" />;
+    } else if (cardCategory === "Git") {
+      //return <AssignmentIndIcon style={iconStyle} />;
+      return <img src={gitIcon} alt="" className="meetingIconStyle" />;
+    } else if (cardCategory === "Jira") {
+      //return <AssignmentIndIcon style={iconStyle} />;
+      return <img src={jiraIcon} alt="" className="meetingIconStyle" />;
     }
   };
 
@@ -192,7 +209,7 @@ const ItemsCard = (props) => {
           <Typography className={classes.cardTitleStyle}>
             {cardTitle}
           </Typography>
-          {cardCategory.includes("Approval") && (
+          {cardType.includes("Approval") && (
             <OpenInNewIcon style={linkStyle} />
           )}
         </div>

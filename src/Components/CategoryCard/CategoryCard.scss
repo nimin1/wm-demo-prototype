@@ -3,7 +3,7 @@
 
   .categoryCardStyle {
     height: 80px;
-    width: 100px;
+    width: 110px;
     margin-left: 10px;
     border-radius: 6px;
   }
@@ -16,8 +16,34 @@
     height: 6px;
     width: 6px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #041f41;
     margin-top: 6px;
     margin-left: 15px;
+  }
+
+  .outlookIconStyle {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    top: 5px;
+    right: 24px;
+  }
+
+  .calendarIconStyle {
+    height: 28px;
+    width: 28px;
+    position: relative;
+    top: 5px;
+    right: 24px;
+    margin-bottom: 4px;
+  }
+
+  .serviceNowIconStyle {
+    height: 22px;
+    width: 22px;
+    position: relative;
+    top: 8px;
+    right: 24px;
+    margin-bottom: 10px;
   }
 }

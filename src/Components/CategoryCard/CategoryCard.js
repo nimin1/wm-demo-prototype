@@ -1,23 +1,26 @@
 import React from "react";
-import GroupIcon from "@material-ui/icons/Group";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import RateReviewIcon from "@material-ui/icons/RateReview";
-import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
 import { Typography, makeStyles } from "@material-ui/core";
 
 import "./CategoryCard.scss";
+import outlookIcon from "../../assets/outlook_icon.png";
+import calendarIcon from "../../assets/calendar_icon.png";
+import serviceNowIcon from "../../assets/service_now.png";
+import concurIcon from "../../assets/concur_icon.png";
+import gitIcon from "../../assets/git_icon.png";
+import jiraIcon from "../../assets/jira_icon.png";
 
 const useStyles = makeStyles({
   categoryTitleStyle: {
-    fontSize: "14px",
-    color: "#fff",
-    margin: "6px 0px 0px 13px",
+    fontSize: "13.5px",
+    color: "#041f41",
+    margin: "0px 0px 0px 13px",
     textAlign: "left",
     fontFamily: "monospace",
+    fontWeight: 600,
   },
   categoryTaskTitleStyle: {
     fontSize: "11px",
-    color: "#fff",
+    color: "#041f41",
     margin: "0px 0px 0px 5px",
     textAlign: "left",
     fontFamily: "monospace",
@@ -38,13 +41,23 @@ const CategoryCard = (props) => {
 
   const findIconForCard = (cardId) => {
     if (cardId === "1001") {
-      return <GroupIcon style={iconStyle} />;
+      //return <GroupIcon style={iconStyle} />;
+      return <img src={calendarIcon} alt="" className="calendarIconStyle" />;
     } else if (cardId === "1002") {
-      return <MailOutlineIcon style={iconStyle} />;
+      //return <MailOutlineIcon style={iconStyle} />;
+      return <img src={outlookIcon} alt="" className="outlookIconStyle" />;
     } else if (cardId === "1003") {
-      return <RateReviewIcon style={iconStyle} />;
+      //return <RateReviewIcon style={iconStyle} />;
+      return <img src={serviceNowIcon} alt="" className="calendarIconStyle" />;
     } else if (cardId === "1004") {
-      return <AssignmentIndIcon style={iconStyle} />;
+      //return <AssignmentIndIcon style={iconStyle} />;
+      return <img src={concurIcon} alt="" className="calendarIconStyle" />;
+    } else if (cardId === "1005") {
+      //return <AssignmentIndIcon style={iconStyle} />;
+      return <img src={gitIcon} alt="" className="calendarIconStyle" />;
+    } else if (cardId === "1006") {
+      //return <AssignmentIndIcon style={iconStyle} />;
+      return <img src={jiraIcon} alt="" className="calendarIconStyle" />;
     }
   };
 

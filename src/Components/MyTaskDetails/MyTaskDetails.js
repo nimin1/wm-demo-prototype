@@ -93,7 +93,8 @@ const useStyles = makeStyles({
     margin: "-2px 5px 0px 15px",
   },
   documentAttachmentTextStyle: {
-    color: "rgba(255, 255, 255, 0.7)",
+    //color: "rgba(255, 255, 255, 0.7)",
+    color: "#fff",
     margin: "0px 0px 0px 5px",
     fontSize: 12,
     textAlign: "left",
@@ -182,42 +183,48 @@ const MyTaskDetails = () => {
   const questionaireIconStyle = {
     height: 36,
     width: 35,
-    color: "#00ab68",
+    //color: "#00ab68",
+    color: "#fdbb30",
     position: "relative",
     top: 15,
   };
   const presentationIconStyle = {
     height: 36,
     width: 35,
-    color: "#4aaafc",
+    //color: "#4aaafc",
+    color: "#fdbb30",
     position: "relative",
     top: 13,
   };
   const assetsIconStyle = {
     height: 36,
     width: 35,
-    color: "#4aaafc",
+    //color: "#4aaafc",
+    color: "#fdbb30",
     position: "relative",
     top: 13,
   };
   const brandingIconStyle = {
     height: 36,
     width: 35,
-    color: "#ab43ff",
+    //color: "#ab43ff",
+    color: "#fdbb30",
     position: "relative",
     top: 13,
   };
   const timelineIconStyle = {
     height: 36,
     width: 35,
-    color: "#fe6466",
+    //color: "#fe6466",
+    color: "#fdbb30",
     position: "relative",
     top: 13,
   };
   const planIconStyle = {
     height: 36,
     width: 35,
-    color: "#488ac9",
+    //color: "#488ac9",
+    color: "#fdbb30",
     position: "relative",
     top: 13,
   };

@@ -34,7 +34,7 @@ const useStyles = makeStyles({
   },
   todayCountStyle: {
     fontSize: "15px",
-    color: "#f97f8f",
+    color: "#041f41",
     fontWeight: 600,
     margin: "20px 20px 0px 25px",
     textAlign: "left",
@@ -91,10 +91,9 @@ const MyTask = (props) => {
   };
 
   useEffect(() => {
-    console.log("selectedItem =", selectedItem)
     if(selectedItem) {
       const filteredItemDetails = itemDetails.filter(
-        (cardEle) => cardEle.cardCategory === selectedItem
+        (cardEle) => cardEle.cardType === selectedItem
       );
 
       setFilteredState(filteredItemDetails)
@@ -127,7 +126,7 @@ const MyTask = (props) => {
       <div className="notificationCountStyle">
         <Typography className={classes.todayTextStyle}>Today</Typography>
         <div className="todayCountContainerStyle">
-          <Typography className={classes.todayCountStyle}>47</Typography>
+          <Typography className={classes.todayCountStyle}>13</Typography>
         </div>
       </div>
       <Divider className={classes.todayDividerStyle} />
