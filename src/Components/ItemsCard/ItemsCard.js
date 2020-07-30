@@ -36,8 +36,9 @@ const useStyles = makeStyles({
     letterSpacing: 0,
   },
   circularProgressStyle: {
-    position: "relative",
+    position: "absolute",
     top: 7,
+    right: 11,
     color: "#041f41",
     height: 35,
     width: 35,
@@ -73,8 +74,8 @@ const ItemsCard = (props) => {
 
   const mailUnreadIconStyle = {
     color: "#041f41",
-    position: "relative",
-    left: 8,
+    position: "absolute",
+    right: 14,
     top: 14,
     height: 30,
     width: 30,
@@ -83,8 +84,8 @@ const ItemsCard = (props) => {
   const mailReadIconStyle = {
     //color: "rgb(3, 167, 111)",
     color: "#041f41",
-    position: "relative",
-    left: 8,
+    position: "absolute",
+    right: 14,
     top: 14,
     height: 30,
     width: 30,
@@ -92,8 +93,8 @@ const ItemsCard = (props) => {
 
   const approvedCircleIconStyle = {
     color: "#041f41",
-    position: "relative",
-    left: 8,
+    position: "absolute",
+    right: 14,
     top: 14,
     height: 30,
     width: 30,
@@ -101,8 +102,8 @@ const ItemsCard = (props) => {
 
   const nonApprovedCircleIconStyle = {
     color: "rgba(4, 31, 65, 0.3)",
-    position: "relative",
-    left: 8,
+    position: "absolute",
+    right: 14,
     top: 14,
     height: 30,
     width: 30,
