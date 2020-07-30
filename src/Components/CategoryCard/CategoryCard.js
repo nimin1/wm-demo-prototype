@@ -32,13 +32,6 @@ const CategoryCard = (props) => {
   const { cardId, category, categoryClicked } = props;
   const { cardTitle, cardTaskTitle, cardColor } = category;
 
-  const iconStyle = {
-    color: "rgba(255, 255, 255, 1)",
-    position: "relative",
-    right: 25,
-    top: 10,
-  };
-
   const findIconForCard = (cardId) => {
     if (cardId === "1001") {
       //return <GroupIcon style={iconStyle} />;

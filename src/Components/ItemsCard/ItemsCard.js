@@ -1,9 +1,5 @@
 import React from "react";
-import GroupIcon from "@material-ui/icons/Group";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import MailIcon from "@material-ui/icons/Mail";
-import RateReviewIcon from "@material-ui/icons/RateReview";
-import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import DraftsIcon from "@material-ui/icons/Drafts";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
@@ -71,13 +67,6 @@ const ItemsCard = (props) => {
     cardType,
     metricCompletion,
   } = item;
-
-  const iconStyle = {
-    color: "rgba(255, 255, 255, 1)",
-    position: "relative",
-    right: 0,
-    top: 14,
-  };
 
   const mailUnreadIconStyle = {
     color: "#041f41",

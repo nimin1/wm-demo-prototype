@@ -114,7 +114,7 @@ export const itemDetails = [
     //cardColor: "#fff",
     cardColor: "#fff",
     cardCategory: "Meetings",
-    cardType: "Non Approval",
+    cardType: "Meetings",
     metricCompletion: "80%",
   },
   {
@@ -184,7 +184,7 @@ export const itemDetails = [
     //cardColor: "#fff",
     cardColor: "#fff",
     cardCategory: "Meetings",
-    cardType: "Non Approval",
+    cardType: "Meetings",
     metricCompletion: "40%",
   },
   {
@@ -194,7 +194,7 @@ export const itemDetails = [
     //cardColor: "#fff",
     cardColor: "#fff",
     cardCategory: "Meetings",
-    cardType: "Non Approval",
+    cardType: "Meetings",
     metricCompletion: "90%",
   },
   {
@@ -231,7 +231,7 @@ export const itemDetails = [
     cardTaskTitle: "9:00 AM, 9:15 AM",
     cardColor: "#fff",
     cardCategory: "Meetings",
-    cardType: "Non Approval",
+    cardType: "Meetings",
     metricCompletion: "50%",
   },
   {
@@ -240,7 +240,7 @@ export const itemDetails = [
     cardTaskTitle: "10:00 AM, 11:00 AM",
     cardColor: "#fff",
     cardCategory: "Meetings",
-    cardType: "Non Approval",
+    cardType: "Meetings",
     metricCompletion: "50%",
   },
   {
