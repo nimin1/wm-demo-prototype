@@ -1,0 +1,62 @@
+.landingPageContainer {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+
+  .topBarIconSetStyle {
+    display: flex;
+    padding: 20px;
+    justify-content: flex-end;
+  }
+
+  .googleAssistantContainerStyle {
+    height: 44px;
+    width: 91%;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  .googleAssistantContainerStyle {
+    display: flex;
+    justify-content: space-between;
+    .googleIconStyle {
+      height: 30px;
+      width: 30px;
+      position: relative;
+      top: 6px;
+      left: 12px;
+    }
+    .googleVoiceStyle {
+      height: 21px;
+      width: 17px;
+      position: relative;
+      top: 10px;
+      right: 20px;
+    }
+  }
+
+  .bottomContainerStyle {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 5px 20px 5px;
+    .callIconStyle {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .middleContainerStyle {
+    height: calc(100% - 220px);
+    .wmAppContainerStyle {
+        position: relative;
+        right: 130px;
+        top: 20px;
+
+        .assistantImageStyle {
+            height: 70px;
+            width: 80px;
+          }
+    }
+  }
+}
