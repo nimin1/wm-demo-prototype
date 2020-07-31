@@ -79,7 +79,7 @@ const MyTask = (props) => {
   };
 
   const navigateToHome = () => {
-    history.push("/");
+    history.push("/home");
   };
 
   const categoryClicked = (category) => {
