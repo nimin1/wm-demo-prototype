@@ -11,19 +11,19 @@ import jiraIcon from "../../assets/jira_icon.png";
 
 const useStyles = makeStyles({
   categoryTitleStyle: {
-    fontSize: "13.5px",
+    fontSize: "13px",
     color: "#041f41",
     margin: "0px 0px 0px 13px",
     textAlign: "left",
-    fontFamily: "monospace",
+    fontFamily: "Helvetica, Arial, sans-serif",
     fontWeight: 600,
   },
   categoryTaskTitleStyle: {
-    fontSize: "11px",
+    fontSize: "10.5px",
     color: "#041f41",
     margin: "0px 0px 0px 5px",
     textAlign: "left",
-    fontFamily: "monospace",
+    fontFamily: "Helvetica, Arial, sans-serif",
   },
 });
 

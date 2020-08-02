@@ -1,0 +1,37 @@
+.settingsContainerStyle {
+  height: 100%;
+  width: 100%;
+
+  .settingsTopContainerStyle {
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #041f41;
+
+    .settingsTopIconContainerStyle {
+      padding: 20px 20px 10px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .settingsDataContainerStyle {
+    display: flex;
+    justify-content: left;
+    padding: 10px 10px 10px 15px;
+    border-bottom: 1px solid #c4c4cd;
+    position: relative;
+
+    .settingNameAndRatingStyle {
+      padding: 5px 10px 5px 13px;
+      text-align: left;
+    }
+
+    .iconContainerStyle {
+      height: 45px;
+      width: 45px;
+      border-radius: 7px;
+      background-color: #fff;
+    }
+  }
+}

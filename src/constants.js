@@ -1,3 +1,133 @@
+import outlookIcon from "./assets/outlook_icon.png";
+import calendarIcon from "./assets/calendar_icon.png";
+import serviceNowIcon from "./assets/service_now.png";
+import concurIcon from "./assets/concur_icon.png";
+import gitIcon from "./assets/git_icon.png";
+import jiraIcon from "./assets/jira_icon.png";
+import fbworkIcon from "./assets/fbwork_icon.png";
+import slackIcon from "./assets/slackIcon.png";
+import teamsIcon from "./assets/teams_icon.png";
+
+export const settingsData = [
+  {
+    itemId: "5001",
+    itemName: "Meetings",
+    itemImage: calendarIcon,
+    itemRating: 4,
+    itemAdded: true,
+    itemStyle: {
+      height: 27,
+      width: 27,
+      position: "relative",
+      top: 10,
+    },
+  },
+  {
+    itemId: "5002",
+    itemName: "Outlook",
+    itemImage: outlookIcon,
+    itemRating: 4,
+    itemAdded: true,
+    itemStyle: {
+      height: 32,
+      width: 32,
+      position: "relative",
+      top: 7,
+    },
+  },
+  {
+    itemId: "5009",
+    itemName: "Teams",
+    itemImage: teamsIcon,
+    itemRating: 4,
+    itemAdded: false,
+    itemStyle: {
+      height: 20,
+      width: 22,
+      position: "relative",
+      top: 12,
+    },
+  },
+  {
+    itemId: "5008",
+    itemName: "Slack",
+    itemImage: slackIcon,
+    itemRating: 5,
+    itemAdded: false,
+    itemStyle: {
+      height: 22,
+      width: 22,
+      position: "relative",
+      top: 11,
+    },
+  },
+  {
+    itemId: "5007",
+    itemName: "Fb @ Work",
+    itemImage: fbworkIcon,
+    itemRating: 3,
+    itemAdded: false,
+    itemStyle: {
+      height: 22,
+      width: 22,
+      position: "relative",
+      top: 11,
+    },
+  },
+  {
+    itemId: "5003",
+    itemName: "Service Now",
+    itemImage: serviceNowIcon,
+    itemRating: 3,
+    itemAdded: true,
+    itemStyle: {
+      height: 22,
+      width: 22,
+      position: "relative",
+      top: 11,
+    },
+  },
+  {
+    itemId: "5004",
+    itemName: "Concur",
+    itemImage: concurIcon,
+    itemRating: 3,
+    itemAdded: true,
+    itemStyle: {
+      height: 22,
+      width: 22,
+      position: "relative",
+      top: 11,
+    },
+  },
+  {
+    itemId: "5005",
+    itemName: "Git",
+    itemImage: gitIcon,
+    itemRating: 4,
+    itemAdded: true,
+    itemStyle: {
+      height: 22,
+      width: 22,
+      position: "relative",
+      top: 11,
+    },
+  },
+  {
+    itemId: "5006",
+    itemName: "Jira",
+    itemImage: jiraIcon,
+    itemRating: 4,
+    itemAdded: true,
+    itemStyle: {
+      height: 22,
+      width: 22,
+      position: "relative",
+      top: 11,
+    },
+  },
+];
+
 export const categoryCardDetails = [
   {
     cardId: "1001",

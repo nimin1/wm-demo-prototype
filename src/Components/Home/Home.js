@@ -3,7 +3,7 @@ import AppsIcon from "@material-ui/icons/Apps";
 import SearchIcon from "@material-ui/icons/Search";
 import MicIcon from "@material-ui/icons/Mic";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
-import NotificationsNoneOutlinedIcon from "@material-ui/icons/NotificationsNoneOutlined";
+import SettingsOutlinedIcon from "@material-ui/icons/SettingsOutlined";
 import AddCommentOutlinedIcon from "@material-ui/icons/AddCommentOutlined";
 import PersonOutlineOutlinedIcon from "@material-ui/icons/PersonOutlineOutlined";
 import ListOutlinedIcon from "@material-ui/icons/ListOutlined";
@@ -184,7 +184,10 @@ const Home = () => {
       </div>
       <div className="bottomIconContainerStyle">
         <HomeOutlinedIcon style={bottomContainerIconsStyle} />
-        <NotificationsNoneOutlinedIcon style={bottomContainerIconsStyle} />
+        <SettingsOutlinedIcon
+          style={bottomContainerIconsStyle}
+          onClick={() => history.push("/settings")}
+        />
         <AddCommentOutlinedIcon style={selectedBottomContainerIconsStyle} />
         <ListOutlinedIcon
           style={bottomContainerIconsStyle}

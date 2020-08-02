@@ -17,14 +17,14 @@ import "./ItemsCard.scss";
 
 const useStyles = makeStyles({
   cardTitleStyle: {
-    fontSize: "13.5px",
+    fontSize: "13px",
     fontWeight: 600,
-    margin: "7px 0px 0px 15px",
+    margin: "10px 0px 0px 15px",
     textAlign: "left",
     textOverflow: "ellipsis",
     overflow: "hidden",
     whiteSpace: "nowrap",
-    fontFamily: "monospace",
+    fontFamily: "Helvetica, Arial, sans-serif",
   },
   cardTaskTitleStyle: {
     fontSize: "10px",
@@ -32,10 +32,9 @@ const useStyles = makeStyles({
     textOverflow: "ellipsis",
     overflow: "hidden",
     whiteSpace: "nowrap",
-    fontFamily: "monospace",
+    fontFamily: "Helvetica, Arial, sans-serif",
     margin: "0px 20px 0px 15px",
     color: "rgba(0, 0, 0, 0.7)",
-    letterSpacing: 0,
   },
   circularProgressStyle: {
     position: "absolute",

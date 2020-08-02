@@ -6,6 +6,7 @@ import LandingPage from "./Components/LandingPage/LandingPage";
 import MyTask from "./Components/MyTask/MyTask";
 import MyTaskDetails from "./Components/MyTaskDetails/MyTaskDetails";
 import CreateMeeting from "./Components/CreateMeeting/CreateMeeting";
+import SettingsComp from "./Components/SettingsComp/SettingsComp";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/mytask" component={MyTask} />
         <Route path="/mytaskdetails" component={MyTaskDetails} />
         <Route path="/schedulemeeting" component={CreateMeeting} />
+        <Route path="/settings" component={SettingsComp} />
         <Route
           path="/myapprovals"
           render={() => <MyTask selectedItem={"Approval"} />}

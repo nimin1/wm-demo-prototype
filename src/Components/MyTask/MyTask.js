@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AppsIcon from "@material-ui/icons/Apps";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
-import NotificationsNoneOutlinedIcon from "@material-ui/icons/NotificationsNoneOutlined";
+import SettingsOutlinedIcon from "@material-ui/icons/SettingsOutlined";
 import AddCommentOutlinedIcon from "@material-ui/icons/AddCommentOutlined";
 import PersonOutlineOutlinedIcon from "@material-ui/icons/PersonOutlineOutlined";
 import ListOutlinedIcon from "@material-ui/icons/ListOutlined";
@@ -26,21 +26,22 @@ const useStyles = makeStyles({
     fontFamily: "monospace",
   },
   todayTextStyle: {
-    fontSize: "18px",
+    fontSize: "17px",
     color: "#000",
     fontWeight: 700,
     margin: "20px 20px 0px 25px",
     textAlign: "left",
+    fontFamily: "Helvetica, Arial, sans-serif"
   },
   todayCountStyle: {
-    fontSize: "15px",
+    fontSize: "14px",
     color: "#041f41",
     fontWeight: 600,
     margin: "20px 20px 0px 25px",
     textAlign: "left",
-    fontFamily: "monospace",
+    fontFamily: "Helvetica, Arial, sans-serif",
     position: "relative",
-    bottom: 16,
+    bottom: 15,
     right: 18,
   },
   todayDividerStyle: {
@@ -91,16 +92,16 @@ const MyTask = (props) => {
   };
 
   useEffect(() => {
-    if(selectedItem) {
+    if (selectedItem) {
       const filteredItemDetails = itemDetails.filter(
         (cardEle) => cardEle.cardType === selectedItem
       );
 
-      setFilteredState(filteredItemDetails)
+      setFilteredState(filteredItemDetails);
     } else {
-      setFilteredState(itemDetails)
+      setFilteredState(itemDetails);
     }
-  }, [selectedItem])
+  }, [selectedItem]);
 
   return (
     <div className="myTaskContainerStyle">
@@ -139,7 +140,10 @@ const MyTask = (props) => {
       </SimpleBar>
       <div className="bottomIconContainerStyle">
         <HomeOutlinedIcon style={bottomContainerIconsStyle} />
-        <NotificationsNoneOutlinedIcon style={bottomContainerIconsStyle} />
+        <SettingsOutlinedIcon
+          style={bottomContainerIconsStyle}
+          onClick={() => history.push("/settings")}
+        />
         <AddCommentOutlinedIcon
           style={bottomContainerIconsStyle}
           onClick={navigateToHome}
