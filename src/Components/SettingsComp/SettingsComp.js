@@ -78,11 +78,10 @@ const SettingsComp = () => {
   const [dataSettings, setDataSettings] = useState(null);
 
   const navigateToMyTask = () => {
-    history.push("/mytask");
+    history.goBack();
   };
 
   const listChange = (selType, id) => {
-    console.log({ selType, id, dataSettings });
     const tempDataSettings = [...dataSettings];
 
     tempDataSettings.forEach((data) => {
