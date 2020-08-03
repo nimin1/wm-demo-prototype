@@ -63,7 +63,7 @@ export const settingsData = [
   },
   {
     itemId: "5007",
-    itemName: "Fb @ Work",
+    itemName: "Workplace",
     itemImage: fbworkIcon,
     itemRating: 3,
     itemAdded: false,
